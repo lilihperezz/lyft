@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+.logo {
+	width: 50%;
+	margin-top: 3%;
+}
+.fondo{
+	background-image: url(../img/fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	background-position: center;
+}
+.btn{
+	background-image: url(../img/btn.png);
+
+}
+.botones{
+	width: 100%;
+	margin-top: 20%;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 9%;
+
+}
