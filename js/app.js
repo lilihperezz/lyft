@@ -1,10 +1,10 @@
 $(document).ready(function() {
-	$("#numero").keydown(valorTeclas);
-	$("#numero").keyup(longitudNumeros);
-	$("#next").click(validandoCampos);
-	$("#next").click(numerosAleatorios);
-	
-	function valorTeclas(evento) {
+	$("#numeroCelular").keydown(valorTeclas);
+	$("#numeroCelular").keyup(longitudNumeros);
+	$("#btnSignup").click(numerosAleatorios);
+	$("#contenedorNumeroCel").text(localStorage.getItem("numeroMovistar"));
+
+function valorTeclas(evento) {
 		var ascii = evento.keyCode;
 		if (ascii == 8 || (ascii >= 48 && ascii <= 57)) {
 			return true;
@@ -12,27 +12,29 @@ $(document).ready(function() {
 			return false;
 		}
 	}
-	function longitudNumeros(evento) {
+function longitudNumeros(evento) {
 		var longitud = $(this).val().length;
 		if (longitud == 9) {
-			$("#next").attr("href", "index.html");
+			$("#btnSignup").attr("href", "contactos.html");
 		} else {
-			$("#next").removeAttr("href");
+			$("#btnSignup").removeAttr("href");
+				
 		}
 	}
-	function numerosAleatorios(evento){
+function numerosAleatorios(evento){
+	var valorNumero = $("#numeroCelular").val().length;
+		if (valorNumero == 9) {
+		//	$("#btnSignup[disabled]")= false;
 		var numeroRandom = Math.round(Math.random()*899)+100 ;
 		var codigoLab = "LAB-";
 		var codigoLabNumero = codigoLab + numeroRandom;
 			alert(codigoLabNumero);
-	}
-	function validandoCampos(evento){
-		var longitud = $(this).val().length;
-		if( longitud != 9 && longitud == 0){
-			next.disabled = true;
-			alert("ingrese 9 dígitos");
+		}else{
+			alert("ingrese 9 numeros");
 		}
+		localStorage.setItem("numeroMovistar",$("#numeroCelular").val());
 	}
+
 });
 
 
