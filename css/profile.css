@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.foto{
+	width: 100vw;
+	height: 50vh;
+}
+.icono{
+	font-size: 17px;
+	padding: 2%;
+
+}
+h1{
+	font-size: 2em;
+	font-family: monospace;
+}
+.subtitulo{
+	border: 1px solid #E6E6E6;
+	width: 80%;
+	margin-left: 10%;
+	background-color:#E6E6E6;
+	padding: 3%;
+	color:#6E6E6E;
+	margin-bottom: 4%;
+}
+.informacion{
+	margin-left: 3%;
+}
+.usuario{
+	position: relative;
+	z-index: 100;
+}
+#editar{
+	position: absolute;
+	top:5%;
+	right: 4%;
+	font-size: 18px;
+	color:#6E6E6E;
+}
+.puntos{
+	position: absolute;
+	top:9%;
+	font-size: 30px;
+	left:3%;
+	color:#ffffff;
+}
+.icono{
+
+}

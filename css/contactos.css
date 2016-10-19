@@ -33,3 +33,18 @@ h1{
 .checkbox{
 	margin-top: 2%;
 }
+.check{
+	position: absolute;
+	top:0;
+	margin-top: 12%;
+}
+.color{
+	color: #086A87;
+	display: inline-block;
+	margin-left: 5%;
+}
+.colorcuadrado{
+	background-color: #086A87;
+	margin-left: 3%;
+	border-radius: 8%;
+}

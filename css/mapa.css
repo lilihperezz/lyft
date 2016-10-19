@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.logo {
+	width: 50%;
+	margin-top: 1%;
+	position: absolute;
+	left: 30%
+
+}
+#principal{
+	position: relative;
+	z-index: 100;
+}
+#gift,#user{
+	position: absolute;
+	border: 1px solid gray;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5%;
+    margin-top: 20%;
+    font-size: 140%;
+
+}
+#gift{
+    right:20%;
+}
+#classMap{
+	height: 100vh;
+	width: 100vw;
+}
+#gift{
+	margin-right: 0;
+}

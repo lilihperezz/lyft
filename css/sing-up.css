@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.icono{
+	font-size: 25px;
+	margin-top: 83%;
+	position: absolute;
+	top: 0;
+}
+.bandera{
+	width: 25px;
+}
+.mensaje{
+	margin-top: 4%;
+	width: 100%;
+}
+.form-control:focus {
+   	outline: -webkit-focus-ring-color auto 0px;
+  	outline-style: none;
+ 	box-shadow: none;
+ 	border-color: lightgrey;
+}
+.form-control{
+	border-left:transparent;
+}
+.postal{
+	border-right:transparent;
+}
+.footer{
+	color: #fff;
+	font-size: 2em; 
+    background-color: #086A87;
+    position: absolute;
+    width: 100vw;
+    height: 60px;
+    bottom: 0;
+}
