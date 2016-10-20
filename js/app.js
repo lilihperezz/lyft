@@ -40,10 +40,12 @@ function numerosAleatorios(evento){
 		var codigoLabNumero = codigoLab + numeroRandom;
 			alert("Su código es: "+ codigoLabNumero);
 	}else if(numeroIngresado == 0){
-		alert("campos vacios");
+	//	alert("campos vacios");
+		sweetAlert("Oops...", "Verifique los campos vacios", "error");
 		$("#IngresarNumero").focus();
 	}else{
-		alert("Ingrese un número válido de 9 dígitos");
+	//	alert("Ingrese un número válido de 9 dígitos");
+		sweetAlert( "Oops...","Ingrese un número válido de 9 dígitos", "error");
 		$("#IngresarNumero").val("");
 		$("#ingresarNumero").focus();
 	}
@@ -58,10 +60,12 @@ function validarCodigo(evento){
 	if(codigo == localStorage.getItem("codigoGenerado")){
 		$("#btn-verifyphone").attr("href", "contactos.html");
 	}else if(codigo == ""){
-		alert("Ingrese su código por favor");
+	// alert("Ingrese su código por favor");
+	sweetAlert("Oops...", "Ingrese su código por favor", "error");
 		$("#numero1").focus();
 	}else{
-		alert("Código inválido");
+	// alert("Código inválido");
+		sweetAlert("Oops...","Código inválido", "error");
 		$("#btn-verifyphone").removeAttr("href");
 		$(".inputCodigo").val("");
 		$("#numero1").focus();
@@ -83,7 +87,8 @@ function saltarInputCodigo(evento) {
 	}else if(ascii == 8) {
 		$(this).parent().prev().children().focus();	
 	}else{
-		alert("Ingrese solo números");
+	 // alert("Ingrese solo números");
+	 sweetAlert("Oops...", "Ingrese solo números", "error");
 	}
 }
 function generarNuevoCodigo(evento){
@@ -105,10 +110,11 @@ function validarDatosUsuario(evento){
 		$("#btn-contactos").attr("href", "mapa.html");
 	}else if(!emailReg.test(emailValido)){
 		alert("Ingrese un correo válido")
-	}else if((50>= email >= 5) &&(emailReg.test(emailValido) = true)){
+	}else if((50>= email >= 5) && (emailReg.test(emailValido) = true)){
 		return true;
-	}else if((firstName || lastName) =="" ||((emailValido) == "")){
-		alert("Valide los campos vacios");
+	}else if((firstName || lastName) == "" ||((emailValido) == "")){
+	//	alert("campos vacios");
+		sweetAlert("Oops...", "Campos vacios", "error");
 		$("#first-name").focus();
 	}else{
 		alert("Valide todos los campos");

@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lyft</title>
+    <title>Mapa</title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/mapa.css" type="text/css">
+    <link rel="stylesheet" href="css/sweetalert.css" type="text/css">
 </head>
 <body>
     <div class="iconos">
@@ -16,11 +18,12 @@
     </div>
     <div class="botones">
         <input name="ubicacion" id="ubicacion" type="text" required class="form-control">
-        <a id="btn-SetPickup" class="btn pickup" href="#" role="button">Set pickup</a>
+        <a id="btn-SetPickup" class="btn pickup" role="button">Set pickup</a>
     </div>
     <div id= "mapa"></div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPB60PwXxrWJeR-ykF5pfNK9K90Ud68Y0" async defer></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/sweetalert.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 </body>
