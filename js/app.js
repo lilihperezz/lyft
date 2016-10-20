@@ -1,7 +1,4 @@
-
 $(document).ready(function() {
-	$("#ingresarNumero").focus();
-	$("#numero1").focus();
 	$("#ingresarNumero").keydown(valorTeclas);
 	$("#ingresarNumero").keyup(longitudNumeros);
 	$("#btn-signup").click(numerosAleatorios);
@@ -9,10 +6,12 @@ $(document).ready(function() {
 	$(".inputCodigo").keydown(valorInputCodigo);
 	$(".inputCodigo").keyup(saltarInputCodigo);
 	$("#resendCode").click(generarNuevoCodigo);
+	$("#btn-contactos").click(validarDatosUsuario);
 	$("#contenedorNumeroCel").text(localStorage.getItem("numeroCelIngresado"));
-
+	$("#ingresarNumero").focus();
+	$("#numero1").focus();
+	$("#first-name").focus();
 	if (navigator.geolocation) { 
-		// también se puede usar if ("geolocation" in navigator) {}
 		navigator.geolocation.getCurrentPosition(exito, error);
 	}
 });
@@ -39,7 +38,7 @@ function numerosAleatorios(evento){
 		var numeroRandom = Math.round(Math.random()*899)+100 ;
 		var codigoLab = "LAB-";
 		var codigoLabNumero = codigoLab + numeroRandom;
-			alert(codigoLabNumero);
+			alert("Su código es: "+ codigoLabNumero);
 	}else if(numeroIngresado == 0){
 		alert("campos vacios");
 		$("#IngresarNumero").focus();
@@ -91,11 +90,31 @@ function generarNuevoCodigo(evento){
 	var numeroRandom = Math.round(Math.random()*899)+100 ;
 	var codigoLab = "LAB-";
 	var codigoLabNumero = codigoLab + numeroRandom;
-	    alert(codigoLabNumero);
+	    alert("Su código es: "+ codigoLabNumero);
 
 	localStorage.setItem("codigoGenerado",numeroRandom);
 		validarCodigo();
 }	
+function validarDatosUsuario(evento){
+	var firstName = $("#first-name").val().length;
+	var lastName = $("#last-name").val().length;
+	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+	var emailValido = $("#email").val();
+	if((20>= firstName && lastName>= 2) && (emailValido != "") ) {
+		$(".check").prop("checked", "checked");
+		$("#btn-contactos").attr("href", "mapa.html");
+	}else if(!emailReg.test(emailValido)){
+		alert("Ingrese un correo válido")
+	}else if((50>= email >= 5) &&(emailReg.test(emailValido) = true)){
+		return true;
+	}else if((firstName || lastName) =="" ||((emailValido) == "")){
+		alert("Valide los campos vacios");
+		$("#first-name").focus();
+	}else{
+		alert("Valide todos los campos");
+		$("#first-name").focus();
+	}
+}
 function exito(posicion) {
 	var lat = posicion.coords.latitude;
     var lon = posicion.coords.longitude;
