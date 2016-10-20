@@ -76,3 +76,6 @@ body{
  	box-shadow: none;
  	border-color: lightgrey;
 }
+#embed{
+	position: absolute;
+}
