@@ -9,23 +9,15 @@
     <link rel="stylesheet" href="css/mapa.css" type="text/css">
 </head>
 <body>
-    <section id="principal">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-lg-12">
-                    <img src= "img/logo.png" class="logo" alt="logo">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-lg-6">  
-                    <span id ="user" class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                </div>
-                 <div class="col-xs-6 col-lg-6"> 
-                    <span id="gift" class="glyphicon glyphicon-gift" aria-hidden="true"></span>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="iconos">
+        <span id ="user" class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        <img src= "img/logo.png" class="logo" alt="logo">
+        <a href="contactos.html"><span id="gift" class="glyphicon glyphicon-gift" aria-hidden="true"></span></a>
+    </div>
+    <div class="botones">
+        <input name="ubicacion" id="ubicacion" type="text" required class="form-control">
+        <a id="btn-SetPickup" class="btn pickup" href="#" role="button">Set pickup</a>
+    </div>
     <div id= "mapa"></div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPB60PwXxrWJeR-ykF5pfNK9K90Ud68Y0" async defer></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>

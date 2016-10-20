@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/contactos.css" type="text/css">
 </head>
 <body>
-  	<header id="sing-up">
+  	<header>
   		<div class="container-fluid">
   			<div class="row text-center">
   				<div class="col-xs-1">
-  					<a href="signup.html"><span class="glyphicon glyphicon-menu-left icono" aria-hidden="true"></span></a>
+  					<a href="verify-phone.html"><span class="glyphicon glyphicon-menu-left icono" aria-hidden="true"></span></a>
   				</div>
   				<div class="col-xs-11">
   					<h1>Sign up</h1>
@@ -24,44 +24,42 @@
   	</header>
   	<hr>
 	<section class="container">
+		<div class="row">
+    		<div class="col-xs-12 col-lg-12">
+      			<div class="form-group two-fields">
+        			<div class="input-group">
+         				<input name="firstname" id="first-name" type="text" required class="form-control" placeholder="First name">
+         				<input name="lastname" id="last-name" type="text" required class="form-control" placeholder="Last name">
+        			</div>
+      			</div>
+    		</div>
+  		</div>
 		<div class="row text-center">
-			<div class="col-xs-6 col-lg-6">
-				<div class="datos">
-					<input id= "firstName" type="text" class="form-control" aria-label="..." placeholder="First name"> 
+			<div class="col-xs-12 col-lg-12">
+				<div class="input-group">
+  					<span class="input-group-addon" id="basic-addon1">@</span>
+  					<input id="email" type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
 				</div>
+				<!-- <div class="datos"> 
+					<input id= "email" type="text" class="form-control" aria-label="..." placeholder="Email"> 
+				</div>-->
 			</div>
-			<div class="col-xs-6 col-lg-6">
-				<div class="datos">
-					<input id= "lastName" type="text" class="form-control" aria-label="..." placeholder="Last name"> 
-				</div>
+		</div>			
+		<div class="container-fluid">
+			<div class="row text-center checkbox">
+  				<div class="col-xs-12 col-lg-12">
+   					<div class="input-group check">
+        				<input class="check" type="checkbox" aria-label="...">
+      				</div> 			
+  				    <p class="color">I agree to Lyft´s</p><p class="color2"> Terms of Service</p>
+  				</div>
 			</div>
-			<div class="container">
-				<div class="row text-center">
-					<div class="col-xs-12 col-lg-12">
-						<div class="datos">
-							<input id= "email" type="text" class="form-control" aria-label="..." placeholder="Email"> 
-						</div>
-					</div>
-				</div>			
-			</div>
-			<div class="container">
-				<div class="row">
-  					<div class="col-lg-6">
-   						<div class="input-group check">
-      						<span class="input-group-addon colorcuadrado">
-        						<input type="checkbox" aria-label="...">
-      						</span>
-      						<div>I agree to Lyft´s <p class="color">Terms of Service<p></div>
-    					</div><!-- /input-group -->
-  					</div><!-- /.col-lg-6 -->
-				</div>
-			</div>
-		</div>
+		</div>		
 	</section>
 	<footer>
 		<div class="container-fluid">
 			<div class="row">
-					<a id="btn-contactos" class="btn footer" href="verifyphone.html" role="button">Next</a>
+					<a id="btn-contactos" class="btn footer" href="mapa.html" role="button">Next</a>
 				</div>
 			</div>
 		</div>

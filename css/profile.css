@@ -24,6 +24,8 @@ h1{
 	padding: 3%;
 	color:#6E6E6E;
 	margin-bottom: 4%;
+	border-radius: 8px;
+
 }
 .informacion{
 	margin-left: 3%;
@@ -31,6 +33,7 @@ h1{
 .usuario{
 	position: relative;
 	z-index: 100;
+	width: 100vw;
 }
 #editar{
 	position: absolute;
@@ -45,7 +48,4 @@ h1{
 	font-size: 30px;
 	left:3%;
 	color:#ffffff;
-}
-.icono{
-
 }

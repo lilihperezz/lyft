@@ -5,7 +5,8 @@
 }
 h1{
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 25px;
+	margin-right: 1%;
 }
 .icono{
 	font-size: 25px;
@@ -42,7 +43,7 @@ h1{
 .lab{
 	margin-top: 10%;
 	font-weight: bold;
-	margin-left: 40%;
+	margin-left: 20%;
 	position: absolute;
 }
 .codigo{
