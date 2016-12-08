@@ -20,19 +20,16 @@ body{
 	background-position: center;
 }
 .btn-danger,.btn-primary{
-	padding: 7%;
-	width: 65%;
+	padding: 2%;
+	width: 60%;
 }
 .btn-danger{
-	margin-right: 50%;
+	/*margin-right: 50%;*/
 }
 .botones{
 	width: 100%;
 	margin-top: 20%;
 	bottom: 0;
 	margin-bottom: 10%;
-	position: absolute;
-}
-#embed{
 	position: absolute;
 }
